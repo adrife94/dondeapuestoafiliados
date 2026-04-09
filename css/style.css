@@ -1,7 +1,64 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-body{color:#2e2d3e;font-family:"Source Sans Pro",sans-serif;font-weight:400;line-height:1.625;overflow-x: hidden;}
+body{color:#2e2d3e;font-family:"Source Sans Pro",sans-serif;font-weight:400;line-height:1.625;overflow-x: hidden; background-color: #f4f6f9;}
 ul{list-style-type:none;margin:0;padding:0}
+
+/* Modern Card Grid Styles */
+.bet-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  cursor: pointer;
+  min-height: 140px;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 16px !important;
+  background-color: #fff;
+}
+.bet-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+.bet-card img {
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.bet-card:hover img {
+  transform: scale(1.05);
+}
+.bet-card-overlay {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: bottom 0.3s ease;
+  padding: 10px;
+}
+.bet-card:hover .bet-card-overlay {
+  bottom: 0;
+}
+.bet-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  color: #fff !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 131, 176, 0.3);
+  transition: background 0.3s ease;
+}
+.bet-btn:hover {
+  background: linear-gradient(135deg, #0083b0 0%, #00b4db 100%);
+}
+.bet-card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
 a:hover{text-decoration:none}
 button{cursor:pointer}
 button:focus{outline:0;box-shadow:none}
