@@ -12,9 +12,9 @@ $(document).ready(function() {
 
 
 av_legality_check = function() {
-	if ($.cookie('is_legal') == "no") {
+	if ($.cookie('is_legal') == "yes") {
 		// legal!
-		// Do nothing?
+		// Do nothing, popup already shown and accepted previously
 	} else {
 		av_showmodal();
 

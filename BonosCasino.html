@@ -48,140 +48,25 @@
             padding: 30px 0;
         }
 
-        /* Table Styles */
-
-        .table-wrapper {
-            margin: 50px 50px 50px;
-            box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
-        }
-
-        .fl-table {
-            border-radius: 5px;
-            font-size: 12px;
-            font-weight: normal;
-            border: none;
-            border-collapse: collapse;
-            width: 100%;
-            max-width: 100%;
-            white-space: nowrap;
-            background-color: #d9ebeb;
-        }
-
-            .fl-table td, .fl-table th {
-                text-align: center;
-                padding: 8px;
-                padding-top: 12px;
-                padding-bottom: 10px;
-            }
-
-            .fl-table td {
-                font-weight:bold;
-                border-right: 1px solid #e2dddd;
-                font-size: 14px;
-            }
-
-            .fl-table thead th {
-                color: #ffffff;
-                background: #4FC3A1;
-                font-size: 14px;
-                font-family:'Times New Roman', Times, serif'Segoe UI', Tahoma, Geneva, Verdana, sans-serif'Times New Roman'
-            }
-
-
-            .fl-table thead th:nth-child(odd) {
-                color: #ffffff;
-                background: #324960;
-            }
-
-            .fl-table tr:nth-child(even) {
-                background: #F8F8F8;
-            }
-
-        /* Responsive */
-
-        @media (max-width: 767px) {
-          .table-wrapper {
-            display: block;
-            margin: 50px 30px 50px;
-            overflow-x: auto;
-          }
-            /*.fl-table {
-                display: block;
-                width: 100%;
-            }
-
-            .table-wrapper:before {
-                content: "Scroll horizontally >";
-                display: block;
-                text-align: right;
-                font-size: 11px;
-                color: white;
-                padding: 0 0 10px;
-            }
-
-            .fl-table thead, .fl-table tbody, .fl-table thead th {
-                display: block;
-                width:160px;
-            }
-
-                .fl-table thead th:last-child {
-                    border-bottom: none;
-                }
-
-            .fl-table thead {
-                float: left;
-            }
-
-            .fl-table tbody {
-                width: auto;
-                position: relative;
-                overflow-x: auto;
-            }
-
-            .fl-table td, .fl-table th {
-                padding: 20px .625em .625em .625em;
-                height: 60px;
-                vertical-align: middle;
-                box-sizing: border-box;
-                overflow-x: hidden;
-                overflow-y: auto;
-                width: 120px;
-                font-size: 13px;
-                text-overflow: ellipsis;
-            }
-
-            .fl-table thead th {
-                text-align: left;
-                border-bottom: 1px solid #f7f7f9;
-            }
-
-            .fl-table tbody tr {
-                display: table-cell;
-            }
-
-                .fl-table tbody tr:nth-child(odd) {
-                    background: none;
-                }
-
-            .fl-table tr:nth-child(even) {
-                background: transparent;
-            }
-
-            .fl-table tr td:nth-child(odd) {
-                background: #F8F8F8;
-                border-right: 1px solid #E6E4E4;
-            }
-
-            .fl-table tr td:nth-child(even) {
-                border-right: 1px solid #E6E4E4;
-            }
-
-            .fl-table tbody td {
-                display: block;
-                text-align: center;
-                width:260px;
-            }*/
-        }
+    /* Card Styles */
+    .bet-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      min-height: 120px;
+    }
+    .bet-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    }
+    .bet-card img {
+      max-height: 80px;
+      object-fit: contain;
+    }
+    .bet-card-link {
+      text-decoration: none;
+      display: block;
+      height: 100%;
+    }
     </style>
 </head>
 <body>
@@ -259,155 +144,87 @@
 
 
 
-    <!--================ Start Blog Table Area =================-->
+    <!--================ Start Blog Grid Area =================-->
     <section class="blog-post-area section-margining">
-        <div class="table-wrapper">
-            <table class="fl-table">
-                <thead style="height: 70px;" >
-                    <tr>
-                        <th>Casa</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <div class="container">
+            <div class="row align-items-center justify-content-center mt-5 mb-5">
 
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://app.afiliago.com/go/2927/WB3nmIiyXk/2" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/casinoobarcelona.jpg" class="img-fluid" alt="Casino Barcelona"/>
+                        </div>
+                    </a>
+                </div>
 
- <tr>
-                        <td><a href="https://app.afiliago.com/go/2927/WB3nmIiyXk/2" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/casinoobarcelona.jpg" width="100" height="80"/></a></td>
-                    </tr>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://app.afiliago.com/go/6652/XFGTfcSyew" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/todoslots.jpg" class="img-fluid" alt="Todo Slots"/>
+                        </div>
+                    </a>
+                </div>
 
- <tr>
-                        <td><a href="https://app.afiliago.com/go/6652/XFGTfcSyew" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/todoslots.jpg" width="100" height="80"/></a></td>
-                    </tr>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://app.afiliago.com/go/6651/vldLPs980M" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/gp.png" class="img-fluid" alt="GP"/>
+                        </div>
+                    </a>
+                </div>
 
-                     <tr>
-                        <td><a href="https://app.afiliago.com/go/6651/vldLPs980M" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/gp.png" width="100" height="80"/></a></td>
-                    </tr>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://app.afiliago.com/go/6455/PBRFSGjgZY/2" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/yobingo.jpg" class="img-fluid" alt="Yo Bingo"/>
+                        </div>
+                    </a>
+                </div>
 
-                      <tr>
-                       <td><a href="https://app.afiliago.com/go/6455/PBRFSGjgZY/2" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/yobingo.jpg" width="100" height="80"/></a></td>
-                    </tr>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://app.afiliago.com/go/6454/dBy0xiUzec/2" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/yocasino.png" class="img-fluid" alt="Yo Casino"/>
+                        </div>
+                    </a>
+                </div>
 
-                                         <tr>
-                        <td><a href="https://app.afiliago.com/go/6454/dBy0xiUzec/2" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/yocasino.png" width="100" height="80"/></a></td>
-                    </tr>
-   
-                    <tr>
-                        <td><a href="https://campaigns.williamhill.es/C.ashx?btag=a_187386b_1051c_&affid=1738761&siteid=187386&adid=1051&c=" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/williamhill.jpg" width="120" height="70"/></a></td>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://campaigns.williamhill.es/C.ashx?btag=a_187386b_1051c_&affid=1738761&siteid=187386&adid=1051&c=" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/williamhill.jpg" class="img-fluid" alt="William Hill"/>
+                        </div>
+                    </a>
+                </div>
 
-                    </tr>
-             
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://bet.redluckia.com/redirect.aspx?pid=13597&bid=1953" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/luckia.webp" class="img-fluid" alt="Luckia"/>
+                        </div>
+                    </a>
+                </div>
 
-                    
-                    <tr>
-                        <td><a href="https://bet.redluckia.com/redirect.aspx?pid=13597&bid=1953" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/luckia.webp" width="120" height="70"/></a></td>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://777es.livepartners.com/click.php?z=126877" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/777.png" class="img-fluid" alt="777"/>
+                        </div>
+                    </a>
+                </div>
 
-                    </tr>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="https://app.afiliago.com/go/21570/RX6DQ7EKY1/2" target="_blank" class="bet-card-link">
+                        <div class="bet-card text-center shadow-sm rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                            <img src="img/logos/888sport.jpg" class="img-fluid" alt="888 Sport"/>
+                        </div>
+                    </a>
+                </div>
 
-                        <tr>
-                        <td><a href="https://777es.livepartners.com/click.php?z=126877" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/777.png" width="120" height="70"/></a></td>
-
-                    </tr>
-
-                         </tr>
-
-                        <tr>
-                        <td><a href="https://app.afiliago.com/go/21570/RX6DQ7EKY1/2" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/888sport.jpg" width="120" height="70"/></a></td>
-
-                    </tr>
-					
-					<!--
-
-                     
-                    <tr> 
-                        <td><a href="https://www.starvegas.es/gmg/refer/5f368c77e329510001318ce5" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/starvegas.png" width="120" height="50"/></a></td>
-					</tr>
-
-                    <tr>
-                        <td><a href="https://app.afiliago.com/go/4983/skbDC1fItF/2" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/codere.jpg" width="100" height="80"/></a></td>
-                    </tr>
-
-                         <tr>
-                        <td><a href="https://online.codere.es/promoRedirect?key=ej0xMzUzMDA0NyZsPTEzNTI5NTIwJnA9MTQ0Nzc0" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/codere.jpg" width="100" height="80"/></a></td>
-                    </tr>
-					
-					 <tr>
-						<td><a href="https://go.bluewinpartners.com/visit/?bta=2959829&nci=5519" target="_blank"
-						style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/casinado.png" width="140" height="80"></a>
-						</td>
-					</tr>
-					               
-
-					<tr>
-						<td><a href="https://go.bluewinpartners.com/visit/?bta=2959829&nci=5518" target="_blank"
-						style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/vw-500.png" width="140" height="80"></a>
-						</td>
-					</tr>
-		  
-				  <tr>
-					<td><a href="https://go.bluewinpartners.com/visit/?bta=2959829&nci=5594" target="_blank"
-						style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/VLlogo.png" width="140" height="80"></a>
-					</td>
-				  </tr>
-
-                    <tr>
-                        <td><a href="https://bet.redluckia.com/redirect.aspx?pid=13597&bid=1953" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/luckia.webp" width="120" height="80"></a></td>
-                    </tr>
-
-
-					<tr> 
-                        <td><a href="https://bsbt.fynkelto.com/?mid=258549_1517834" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/BassBet-Logo.jpg" width="120" height="50"/></a></td>
-					</tr>
-					
-					<tr> 
-						<td><a href="https://spng.fynkelto.com/?mid=258549_1517835" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/spinanga.png" width="120" height="50"/></a></td>
-					</tr>
-					
-					<tr> 
-						<td><a href="https://csn.fynkelto.com/?mid=258549_1517837" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/casinia.png" width="120" height="50"/></a></td>
-					</tr>
-					
-					<tr> 
-						<td><a href="https://lrb.fynkelto.com/?mid=258549_1517838" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/librabet.jpg" width="120" height="50"/></a></td>
-					</tr>
-					
-					<tr> 
-						<td><a href="https://nmn.fynkelto.com/?mid=258549_1517839" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/nomini.png" width="120" height="50"/></a></td>
-					</tr>
-					
-					<tr> 
-						<td><a href="https://rbn.fynkelto.com/?mid=258549_1517843" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/rabona.png" width="120" height="50"/></a></td>
-					</tr>
-
-                   <tr> 
-                        <td><a href="https://wnc.fynkelto.com/?mid=258548_1517833" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/wonaco.png" width="120" height="50"/></a></td>
-					</tr>
-
-                   <tr> 
-                        <td><a href="https://czs.fynkelto.com/?mid=259592_1522879" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/cazeus.png" width="120" height="50"/></a></td>
-					</tr>		
-
-                   <tr> 
-                        <td><a href="https://tkt.fynkelto.com/?mid=259592_1522825" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/tikitaka.png" width="120" height="50"/></a></td>
-					</tr>		
-
-					<tr> 
-					    <td><a href="https://wbr.fynkelto.com/?mid=259601_1595762" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/wildrobin.png" width="120" height="50"/></a></td>
-					</tr>	
-					
-					<tr> 
-					   <td><a href="https://abkng.fynkelto.com/?mid=274366_1646835" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/abuking.jpg" width="120" height="50"/></a></td>
-					</tr>	
-		  
-					<tr> 
-					   <td><a href="https://fnbt.fynkelto.com/?mid=259601_1595763" target="_blank" style='text-decoration:none;color:black;'><img src="img/logos/nuevasCasas/funbet.png" width="120" height="50"/></a></td>
-					</tr>		
-						   -->
-             
-                <tbody>
-            </table>
+            </div>
         </div>
     </section>
-    <!--================ End Blog Table Area =================-->
+    <!--================ End Blog Grid Area =================-->
 
 
   <!--================ Start Footer Area =================-->
